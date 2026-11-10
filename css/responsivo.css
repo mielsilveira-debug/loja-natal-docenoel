@@ -1,0 +1,37 @@
+/* Mobile first: ajustes para tablet e celular */
+@media (max-width: 900px) {
+  .chamadas, .mvv { grid-template-columns: 1fr; }
+  .duas-colunas { grid-template-columns: 1fr; gap: 1.5rem; }
+  .modal-conteudo { grid-template-columns: 1fr; max-height: 90vh; overflow-y: auto; }
+  .modal-conteudo img { max-height: 260px; }
+}
+
+@media (max-width: 780px) {
+  .btn-menu { display: block; }
+  nav .menu {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; background: var(--verde);
+    padding: 0 1rem; max-height: 0; overflow: hidden;
+    transition: max-height .35s, padding .35s;
+  }
+  nav .menu.aberto { max-height: 400px; padding: 1rem; }
+  .menu a { display: block; }
+  .menu a.ativo::after { display: none; }
+  .logo strong { font-size: 1.5rem; }
+  h2 { font-size: 2rem; }
+  .slideshow { aspect-ratio: 4 / 3; }
+  .slide-texto { padding: 1.2rem; }
+  .slide-texto h3 { font-size: 1.7rem; }
+  .contagem div { min-width: 72px; padding: .7rem; }
+  .contagem strong { font-size: 1.8rem; }
+  section { padding: 3rem 0; }
+}
+
+@media (max-width: 420px) {
+  .logo img { width: 36px; height: 36px; }
+  .logo strong { font-size: 1.25rem; }
+  .icone-btn { width: 36px; height: 36px; font-size: 1rem; }
+  .grade { grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .card-botoes { flex-direction: column; }
+  .card p { display: none; }
+}

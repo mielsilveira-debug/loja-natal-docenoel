@@ -1,0 +1,37 @@
+LOJA NATALINA - DOCE NOEL CONFEITARIA
+AV2 - Desenvolvimento Web (DWS) - Colégio UNASP - Prof. Samuel Elias
+
+SEGMENTO: Confeitaria natalina
+EQUIPE:
+- Samuel Souto Silveira
+- (Integrante 2)
+- (Integrante 3)
+
+LINK DO SITE (GitHub Pages): https://SEU-USUARIO.github.io/loja-natal-docenoel/
+LINK DO REPOSITÓRIO: https://github.com/SEU-USUARIO/loja-natal-docenoel
+LINK DO VÍDEO (YouTube): (cole aqui)
+
+PÁGINAS: index.html, produtos.html, sobre.html, galeria.html, contato.html
+
+RECURSOS DE JAVASCRIPT (14 implementados):
+1. Slideshow - index.html
+2. Parallax - banners de todas as páginas
+3. Sons (música de fundo + sininho) - todas as páginas
+4. Cards dinâmicos (50 produtos, map + join) - produtos.html / index.html
+5. Filtro por categoria e busca por nome - produtos.html
+6. Carrinho com localStorage - todas as páginas
+7. Contagem regressiva - index.html, sobre.html, galeria.html
+8. Validação de formulário - contato.html
+9. Menu responsivo (hambúrguer) - todas as páginas
+10. Modal de detalhes / Lightbox - produtos.html e galeria.html
+11. Efeito de neve (canvas) - todas as páginas
+12. Modo "Noite de Natal" salvo no localStorage - todas as páginas
+13. Animação ao rolar (IntersectionObserver) - todas as páginas
+14. Botão voltar ao topo - todas as páginas
+Extra: ordenação por preço com sort() e mensagem "Nenhum produto encontrado".
+
+CRÉDITOS:
+- Imagens: geradas por IA para este projeto
+- Sons: sintetizados pela equipe (melodia Jingle Bells, domínio público)
+- Fontes: Google Fonts (Mountains of Christmas, Nunito)
+- Mapa: OpenStreetMap

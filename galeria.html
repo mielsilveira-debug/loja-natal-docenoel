@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria e Ofertas | Doce Noel Confeitaria</title>
+  <meta name="description" content="Galeria de fotos e ofertas especiais de Natal com até 20% de desconto.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <canvas id="neve" aria-hidden="true"></canvas>
+  <div class="luzes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <header>
+    <div class="container topo">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logotipo Doce Noel"><strong>Doce Noel</strong></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="galeria.html" class="ativo">Galeria e Ofertas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="acoes">
+        <button class="icone-btn" id="btn-musica" title="Ligar música" aria-label="Ligar ou desligar música">🔈</button>
+        <button class="icone-btn" id="btn-tema" title="Modo Noite de Natal" aria-label="Alternar tema">🌙</button>
+        <button class="icone-btn" id="btn-carrinho" title="Carrinho" aria-label="Abrir carrinho">🛒<span class="badge" id="contador-carrinho">0</span></button>
+        <button class="icone-btn btn-menu" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner banner-pequeno">
+      <div class="camada camada-fundo" data-velocidade="0.4" style="--img:url('../img/banners/banner2.jpg')"></div>
+      <div class="camada camada-estrelas" data-velocidade="0.15"></div>
+      <div class="banner-conteudo" data-velocidade="-0.1">
+        <h1>Galeria e Ofertas</h1>
+        <p>Um passeio pelos nossos doces e descontos que acabam na meia-noite de Natal.</p>
+      </div>
+    </section>
+    <section class="container revelar">
+      <div class="contagem-box">
+        <h2>As ofertas acabam no Natal!</h2>
+        <p>Todos os produtos abaixo com 20% de desconto.</p>
+        <div class="contagem">
+          <div><strong data-dias>0</strong>dias</div>
+          <div><strong data-horas>00</strong>horas</div>
+          <div><strong data-minutos>00</strong>minutos</div>
+          <div><strong data-segundos>00</strong>segundos</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="revelar">Ofertas especiais</h2>
+      <div class="ofertas" id="lista-ofertas"></div>
+    </section>
+
+    <section class="container">
+      <h2 class="revelar">Galeria</h2>
+      <p class="subtitulo revelar">Clique em uma foto para ampliar.</p>
+      <div class="galeria">
+        <figure class="revelar"><img src="img/banners/banner1.jpg" alt="Mesa da ceia" loading="lazy"><figcaption>Mesa da ceia</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/banner2.jpg" alt="Nossa loja na neve" loading="lazy"><figcaption>Nossa loja na neve</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/banner3.jpg" alt="Casinha de gengibre" loading="lazy"><figcaption>Casinha de gengibre</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/../produtos/panetones.jpg" alt="Panetone trufado" loading="lazy"><figcaption>Panetone trufado</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/../produtos/biscoitos.jpg" alt="Biscoitos decorados" loading="lazy"><figcaption>Biscoitos decorados</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/../produtos/bolos.jpg" alt="Bolo de frutas vermelhas" loading="lazy"><figcaption>Bolo de frutas vermelhas</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/../produtos/cestas.jpg" alt="Cesta Noite Feliz" loading="lazy"><figcaption>Cesta Noite Feliz</figcaption></figure>
+        <figure class="revelar"><img src="img/banners/../produtos/bebidas.jpg" alt="Chocolate quente" loading="lazy"><figcaption>Chocolate quente</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container rodape-colunas">
+      <div>
+        <h4>Doce Noel Confeitaria</h4>
+        <p>O sabor do Natal na sua mesa. 🎄</p>
+        <p>Rua dos Pinheiros, 2512 · Vila Neve · São Paulo/SP</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul><li><a href="index.html">Início</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre nós</a></li><li><a href="galeria.html">Galeria e Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <p>(11) 4002-2512</p>
+        <p>ola@docenoel.com.br</p>
+        <p>Seg a sáb · 8h às 20h</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Doce Noel Confeitaria · Projeto AV2 de Desenvolvimento Web · Colégio UNASP</p>
+  </footer>
+
+  <aside class="carrinho" id="carrinho" aria-label="Carrinho de compras">
+    <div class="carrinho-topo"><h3>Seu trenó 🛷</h3><button id="fechar-carrinho" aria-label="Fechar carrinho">✕</button></div>
+    <ul class="carrinho-itens" id="carrinho-itens"></ul>
+    <div class="carrinho-rodape">
+      <div class="total"><span>Total</span><span id="carrinho-total">R$ 0,00</span></div>
+      <button class="botao dourado" id="finalizar">Finalizar pedido</button>
+    </div>
+  </aside>
+  <div class="sombra-fundo" id="sombra-fundo"></div>
+  <div class="modal" id="modal"><div class="modal-conteudo"></div></div>
+  <div class="modal lightbox" id="lightbox"><button class="fechar" aria-label="Fechar">✕</button><img src="" alt=""></div>
+  <button class="voltar-topo" id="voltar-topo" aria-label="Voltar ao topo">▲</button>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

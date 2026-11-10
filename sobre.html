@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nós | Doce Noel Confeitaria</title>
+  <meta name="description" content="A história, missão, visão, valores e a equipe da Doce Noel Confeitaria.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <canvas id="neve" aria-hidden="true"></canvas>
+  <div class="luzes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <header>
+    <div class="container topo">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logotipo Doce Noel"><strong>Doce Noel</strong></a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html" class="ativo">Sobre nós</a></li>
+          <li><a href="galeria.html">Galeria e Ofertas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="acoes">
+        <button class="icone-btn" id="btn-musica" title="Ligar música" aria-label="Ligar ou desligar música">🔈</button>
+        <button class="icone-btn" id="btn-tema" title="Modo Noite de Natal" aria-label="Alternar tema">🌙</button>
+        <button class="icone-btn" id="btn-carrinho" title="Carrinho" aria-label="Abrir carrinho">🛒<span class="badge" id="contador-carrinho">0</span></button>
+        <button class="icone-btn btn-menu" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner banner-pequeno">
+      <div class="camada camada-fundo" data-velocidade="0.4" style="--img:url('../img/banners/banner3.jpg')"></div>
+      <div class="camada camada-estrelas" data-velocidade="0.15"></div>
+      <div class="banner-conteudo" data-velocidade="-0.1">
+        <h1>Sobre nós</h1>
+        <p>Uma história com cheirinho de canela que começou na cozinha da vovó.</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="duas-colunas">
+        <div class="revelar">
+          <h2 style="text-align:left">Nossa história</h2>
+          <p>Tudo começou em dezembro de 1998, quando a vovó Noélia assou sua primeira fornada de panetones para os vizinhos da Vila Neve. O cheiro de canela atravessou a rua, e no ano seguinte a fila já dobrava o quarteirão.</p>
+          <p>Hoje, a Doce Noel é comandada pelos netos, que mantêm as receitas originais escritas à mão num caderno com capa vermelha. Cada biscoito ainda é decorado um por um, e cada panetone descansa 36 horas antes de ir ao forno.</p>
+          <p>Acreditamos que o Natal é feito de encontros, e que todo encontro fica mais doce com algo gostoso no meio da mesa.</p>
+        </div>
+        <img class="revelar" src="img/banners/banner2.jpg" alt="Fachada da Doce Noel Confeitaria com neve">
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="revelar">Missão, visão e valores</h2>
+      <div class="mvv">
+        <div class="chamada revelar"><div class="emoji">🎯</div><h3>Missão</h3><p>Levar o sabor e o aconchego do Natal para cada família, com doces artesanais de qualidade.</p></div>
+        <div class="chamada revelar"><div class="emoji">🔭</div><h3>Visão</h3><p>Ser a confeitaria natalina mais querida do Brasil até 2030.</p></div>
+        <div class="chamada revelar"><div class="emoji">❤️</div><h3>Valores</h3><p>Carinho, tradição, ingredientes honestos, respeito ao cliente e alegria em servir.</p></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="revelar">Nossa linha do tempo</h2>
+      <div class="linha-tempo">
+        <div class="marco revelar"><strong>1998</strong><p>Vovó Noélia assa os primeiros panetones na cozinha de casa.</p></div>
+        <div class="marco revelar"><strong>2005</strong><p>Abrimos a primeira lojinha na Rua dos Pinheiros.</p></div>
+        <div class="marco revelar"><strong>2014</strong><p>Nasce a famosa Casinha de Gengibre, sucesso absoluto.</p></div>
+        <div class="marco revelar"><strong>2020</strong><p>Começamos as entregas para todo o estado de São Paulo.</p></div>
+        <div class="marco revelar"><strong>2026</strong><p>Lançamos nossa loja online, com 50 produtos e muito carinho.</p></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="revelar">Nossa equipe</h2>
+      <p class="subtitulo revelar">Os duendes por trás deste site.</p>
+      <div class="equipe">
+        <div class="membro revelar"><div class="avatar">🧑‍🎄</div><h3>Samuel Souto Silveira</h3><p>Desenvolvedor e "Duende-chefe" do JavaScript</p></div>
+        <div class="membro revelar"><div class="avatar">🧝</div><h3>Integrante 2</h3><p>Designer e responsável pelo CSS</p></div>
+        <div class="membro revelar"><div class="avatar">🤶</div><h3>Integrante 3</h3><p>Conteúdo, produtos e vídeo</p></div>
+      </div>
+    </section>
+
+    <section class="container revelar">
+      <div class="contagem-box">
+        <h2>Contagem regressiva para o Natal</h2>
+        <div class="contagem">
+          <div><strong data-dias>0</strong>dias</div>
+          <div><strong data-horas>00</strong>horas</div>
+          <div><strong data-minutos>00</strong>minutos</div>
+          <div><strong data-segundos>00</strong>segundos</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container rodape-colunas">
+      <div>
+        <h4>Doce Noel Confeitaria</h4>
+        <p>O sabor do Natal na sua mesa. 🎄</p>
+        <p>Rua dos Pinheiros, 2512 · Vila Neve · São Paulo/SP</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul><li><a href="index.html">Início</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre nós</a></li><li><a href="galeria.html">Galeria e Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <p>(11) 4002-2512</p>
+        <p>ola@docenoel.com.br</p>
+        <p>Seg a sáb · 8h às 20h</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Doce Noel Confeitaria · Projeto AV2 de Desenvolvimento Web · Colégio UNASP</p>
+  </footer>
+
+  <aside class="carrinho" id="carrinho" aria-label="Carrinho de compras">
+    <div class="carrinho-topo"><h3>Seu trenó 🛷</h3><button id="fechar-carrinho" aria-label="Fechar carrinho">✕</button></div>
+    <ul class="carrinho-itens" id="carrinho-itens"></ul>
+    <div class="carrinho-rodape">
+      <div class="total"><span>Total</span><span id="carrinho-total">R$ 0,00</span></div>
+      <button class="botao dourado" id="finalizar">Finalizar pedido</button>
+    </div>
+  </aside>
+  <div class="sombra-fundo" id="sombra-fundo"></div>
+  <div class="modal" id="modal"><div class="modal-conteudo"></div></div>
+  <div class="modal lightbox" id="lightbox"><button class="fechar" aria-label="Fechar">✕</button><img src="" alt=""></div>
+  <button class="voltar-topo" id="voltar-topo" aria-label="Voltar ao topo">▲</button>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
